@@ -1,0 +1,19 @@
+# La Liga football-analytics engine - core dependencies
+# Install: pip install -r requirements.txt   (macOS: brew install libomp for LightGBM)
+# The TheStatsAPI client uses stdlib urllib only (no requests/dotenv).
+
+# Data processing
+pandas>=2.2.0
+numpy>=2.0.0
+scipy>=1.13.0
+
+# Machine learning (tree ensembles only - no deep learning)
+scikit-learn>=1.6.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+
+# Model persistence
+joblib>=1.4.0
+
+# Plotting (portfolio exhibits: style map, driver chart, xG expected table)
+matplotlib>=3.8.0

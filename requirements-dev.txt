@@ -1,0 +1,9 @@
+# Dev / portfolio extras -- only needed to RE-RUN the case-study notebook and re-render figures.
+# The core analysis pipeline (make test, all the phase targets) needs only requirements.txt.
+# Install: pip install -r requirements-dev.txt
+-r requirements.txt
+
+jupyterlab>=4.0          # open / run notebooks/la-liga-analytics-case-study.ipynb
+nbconvert>=7.0           # execute the notebook headless (--execute)
+ipykernel>=6.0           # the kernel the notebook runs on
+nbformat>=5.0            # author / read .ipynb

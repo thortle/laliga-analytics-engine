@@ -1,0 +1,34 @@
+# Secrets -- never commit
+.env
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Licensed match data is not included in this repo (see data/README.md).
+# Local data pulls and regenerable build outputs are ignored:
+data/raw/
+data/processed/
+data/feature_store/
+# Defense-in-depth: never accidentally commit licensed data dropped elsewhere in the tree.
+# (Force-add a legitimately-shareable file with `git add -f` if ever needed.)
+*.csv
+*.jsonl
+*.parquet
+*.feather
+*.pickle
+
+# Generated model artifacts
+*.pkl
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
